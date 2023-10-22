@@ -1,0 +1,211 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+   
+}
+body{
+    height:100%;
+    width: 100vw;
+    background-color: #f4e8dc;
+    position: fixed;
+    
+}
+.container{
+    border: 40px solid #372b20;
+   
+}
+.nav{
+    height:100px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    opacity:1;
+
+   
+}
+
+
+.nav .menu {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.nav .menu:nth-child(1) {
+    animation: fadeInFromLeft 0.5s forwards;
+}
+
+.nav .menu:nth-child(2) {
+    animation: fadeInFromLeft 0.5s forwards 0.5s; /* Delay by 0.5s */
+}
+
+.nav .menu:nth-child(3) {
+    animation: fadeInFromLeft 0.5s forwards 1s; /* Delay by 1s */
+}
+
+.nav .menu:nth-child(4) {
+    animation: fadeInFromLeft 0.5s forwards 1.5s; /* Delay by 1.5s */
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.nav .logo{
+    border-radius: 40px;
+    margin-right:100px;
+    margin-left:10px;
+    margin-top:10px;
+    opacity:1;
+    
+}
+
+
+
+
+.nav a{
+    
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    opacity:0.5;
+    font-weight:500px;
+    margin-right:20px;
+    transition:all 0.5s ease-in-out;
+}
+.nav a:hover{
+    transform:scale(1.2);
+    opacity:1;
+}
+.nav .signin:hover{
+    background-color: transparent;
+    color:black;
+    border:1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.nav .joinnow:hover{
+    background-color:transparent;
+    color:black;
+    border:1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+.nav .signin{
+    height:30px;
+    width:100px;
+    background-color:black;
+    color:rgb(250, 246, 246);
+    border-radius:40px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    opacity:1;
+    font-weight:700;
+    animation: fadeInFromLeft 1s forwards;
+}
+
+.nav .joinnow{
+    height:30px;
+    width:120px;
+    background-color:black;
+    color:rgb(250, 246, 246);
+    border-radius:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+    font-weight:900;
+    animation: fadeInFromLeft 1s forwards;
+}
+.text{
+height:400px;
+margin-top:110px;
+margin-left: 85px;
+}
+
+
+
+
+.text p{
+    margin-top:15px;
+    width:550px;
+    margin-bottom:15px;
+    opacity:1;
+    font-size:20px;
+    
+    
+}
+
+
+span{
+    color: green;
+}
+
+.text .ordernow{
+    height:40px;
+    width:120px;
+    border-radius:30px;
+    border:none;
+    background-color:green;
+    color:white;
+    margin-bottom:20px;
+    transition: 0.5s;
+    font-size: large;
+}
+.text .ordernow:hover{
+    transform:scale(1);
+    background-color:transparent;
+    color:green;
+    border:1px solid black;
+    box-shadow:1px 1px 5px 1px black;
+}
+.icon{
+    margin-left: 15px;
+}
+.text .instagram{
+    margin-left:10px;
+    margin-right:10px;
+}
+.icon .facebook:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.icon .instagram:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.icon .twitter:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+.main{
+    display:flex;
+}
+.drink{
+    height:500px;
+    margin-top: 70px;
+    margin-left: 220px;
+    transition: 1.1s;
+}
+.drink:hover{
+    transform:scale(1.1);
+    transition:1.1s;
+}
+
+
+
+
+
